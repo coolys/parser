@@ -1,0 +1,39 @@
+{
+  "generator-coolybot": {
+    "promptValues": {
+      "packageName": "io.cooly.crawler"
+    },
+    "coolybotVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "parser",
+    "packageName": "io.cooly.crawler",
+    "packageFolder": "io/cooly/crawler",
+    "serverPort": "8084",
+    "authenticationType": "uaa",
+    "uaaBaseName": "AuthService",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWNlYjUxZTE0OTkxNDkwNTJlZDY2ZGNjMzlkMDFjNjQ5NjM3ZGYyYjQyNGU5ZjdlM2ZmYmQ5OWVkMzgzNmU0ZTQwMzNkY2VhNWZjMzJiMjhiNTFjNDZjZDFiMWM5MDUzMGMzZTZkN2VlNjQ2NGFlZmU1Zjc5YzQ0NWIxZTIyNTY=",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "clbPrefix": "clb",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
