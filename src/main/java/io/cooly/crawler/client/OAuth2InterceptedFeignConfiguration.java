@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.oauth2.client.DefaultOAuth2ClientContext;
 
 import feign.RequestInterceptor;
-import io.github.coolybot.security.uaa.LoadBalancedResourceDetails;
+import io.github.coolys.security.uaa.LoadBalancedResourceDetails;
 
 public class OAuth2InterceptedFeignConfiguration {
 

@@ -1,6 +1,6 @@
 package io.cooly.crawler.config;
 
-import io.github.coolybot.config.CoolybotProperties;
+import io.github.coolys.config.CoolybotProperties;
 import io.undertow.UndertowOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

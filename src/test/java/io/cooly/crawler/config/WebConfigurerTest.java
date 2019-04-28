@@ -1,7 +1,7 @@
 package io.cooly.crawler.config;
 
-import io.github.coolybot.config.CoolybotConstants;
-import io.github.coolybot.config.CoolybotProperties;
+import io.github.coolys.config.CoolybotConstants;
+import io.github.coolys.config.CoolybotProperties;
 import io.undertow.Undertow;
 import io.undertow.Undertow.Builder;
 import io.undertow.UndertowOptions;

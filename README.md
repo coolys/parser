@@ -1,10 +1,6 @@
 # parser
 
-This application was generated using Coolybot 5.8.2, you can find documentation and help at [https://www.coolybot.tech/documentation-archive/v5.8.2](https://www.coolybot.tech/documentation-archive/v5.8.2).
-
-This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with Coolybot][] page of the documentation for more information.
-
-This application is configured for Service Discovery and Configuration with the Coolybot-Registry. On launch, it will refuse to start if it is not able to connect to the Coolybot-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the Coolybot-Registry][].
+Parser Service 
 
 ## Development
 
@@ -76,14 +72,3 @@ For more information refer to [Using Docker and Docker-Compose][], this page als
 ## Continuous Integration (optional)
 
 To configure CI for your project, run the ci-cd sub-generator (`coolybot ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
-
-[coolybot homepage and latest documentation]: https://www.coolybot.tech
-[coolybot 5.8.2 archive]: https://www.coolybot.tech/documentation-archive/v5.8.2
-[doing microservices with coolybot]: https://www.coolybot.tech/documentation-archive/v5.8.2/microservices-architecture/
-[using coolybot in development]: https://www.coolybot.tech/documentation-archive/v5.8.2/development/
-[service discovery and configuration with the coolybot-registry]: https://www.coolybot.tech/documentation-archive/v5.8.2/microservices-architecture/#coolybot-registry
-[using docker and docker-compose]: https://www.coolybot.tech/documentation-archive/v5.8.2/docker-compose
-[using coolybot in production]: https://www.coolybot.tech/documentation-archive/v5.8.2/production/
-[running tests page]: https://www.coolybot.tech/documentation-archive/v5.8.2/running-tests/
-[code quality page]: https://www.coolybot.tech/documentation-archive/v5.8.2/code-quality/
-[setting up continuous integration]: https://www.coolybot.tech/documentation-archive/v5.8.2/setting-up-ci/

@@ -18,6 +18,14 @@
 
     <!-- coolybot-needle-distribution-management -->
 
+    <distributionManagement>
+
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <!-- Build properties -->
         <maven.version>3.0.0</maven.version>
@@ -37,9 +45,9 @@
         <profile.tls />
 
         <!-- Dependency versions -->
-        <coolybot-dependencies.version>2.1.1</coolybot-dependencies.version>
+        <coolybot-dependencies.version>2.1.0</coolybot-dependencies.version>
         <!-- The spring-boot version should match the one managed by
-        https://mvnrepository.com/artifact/io.github.coolybot/coolybot-dependencies/${coolybot-dependencies.version} -->
+        https://mvnrepository.com/artifact/io.github.coolys/coolybot-dependencies/${coolybot-dependencies.version} -->
         <spring-boot.version>2.0.8.RELEASE</spring-boot.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
 
@@ -87,7 +95,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.github.coolybot</groupId>
+                <groupId>io.github.coolys</groupId>
                 <artifactId>coolybot-dependencies</artifactId>
                 <version>${coolybot-dependencies.version}</version>
                 <type>pom</type>
@@ -99,8 +107,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.github.coolybot</groupId>
+            <groupId>io.github.coolys</groupId>
             <artifactId>coolybot-framework</artifactId>
+
         </dependency>
 
         <dependency>
