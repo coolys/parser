@@ -1,39 +1,50 @@
 package io.cooly.crawler.client;
 
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
-
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
 /**
- * A WebUrl.
+ * A DataFeed.
  */
 
-public class WebUrl implements Serializable {
+public class DataFeed implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
-    
+   
     private String id;
 
-    
+   
     private String url;
 
-    
+   
     private String domain;
 
-    
+   
     private Boolean fetched;
 
-    
+   
     private Instant created;
 
-    
+   
     private String engine;
+
+   
+    private String data;
+
+   
+    private String html;
+
+   
+    private String links;
+
+   
+    private Integer level;
+
+   
+    private String fileName;
 
     // coolybot-needle-entity-add-field - Coolybot will add fields here, do not remove
     public String getId() {
@@ -48,7 +59,7 @@ public class WebUrl implements Serializable {
         return url;
     }
 
-    public WebUrl url(String url) {
+    public DataFeed url(String url) {
         this.url = url;
         return this;
     }
@@ -61,7 +72,7 @@ public class WebUrl implements Serializable {
         return domain;
     }
 
-    public WebUrl domain(String domain) {
+    public DataFeed domain(String domain) {
         this.domain = domain;
         return this;
     }
@@ -74,7 +85,7 @@ public class WebUrl implements Serializable {
         return fetched;
     }
 
-    public WebUrl fetched(Boolean fetched) {
+    public DataFeed fetched(Boolean fetched) {
         this.fetched = fetched;
         return this;
     }
@@ -87,7 +98,7 @@ public class WebUrl implements Serializable {
         return created;
     }
 
-    public WebUrl created(Instant created) {
+    public DataFeed created(Instant created) {
         this.created = created;
         return this;
     }
@@ -100,13 +111,78 @@ public class WebUrl implements Serializable {
         return engine;
     }
 
-    public WebUrl engine(String engine) {
+    public DataFeed engine(String engine) {
         this.engine = engine;
         return this;
     }
 
     public void setEngine(String engine) {
         this.engine = engine;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public DataFeed data(String data) {
+        this.data = data;
+        return this;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getHtml() {
+        return html;
+    }
+
+    public DataFeed html(String html) {
+        this.html = html;
+        return this;
+    }
+
+    public void setHtml(String html) {
+        this.html = html;
+    }
+
+    public String getLinks() {
+        return links;
+    }
+
+    public DataFeed links(String links) {
+        this.links = links;
+        return this;
+    }
+
+    public void setLinks(String links) {
+        this.links = links;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public DataFeed level(Integer level) {
+        this.level = level;
+        return this;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public DataFeed fileName(String fileName) {
+        this.fileName = fileName;
+        return this;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
     // coolybot-needle-entity-add-getters-setters - Coolybot will add getters and setters here, do not remove
 
@@ -118,11 +194,11 @@ public class WebUrl implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        WebUrl webUrl = (WebUrl) o;
-        if (webUrl.getId() == null || getId() == null) {
+        DataFeed dataFeed = (DataFeed) o;
+        if (dataFeed.getId() == null || getId() == null) {
             return false;
         }
-        return Objects.equals(getId(), webUrl.getId());
+        return Objects.equals(getId(), dataFeed.getId());
     }
 
     @Override
@@ -132,13 +208,18 @@ public class WebUrl implements Serializable {
 
     @Override
     public String toString() {
-        return "WebUrl{" +
+        return "DataFeed{" +
             "id=" + getId() +
             ", url='" + getUrl() + "'" +
             ", domain='" + getDomain() + "'" +
             ", fetched='" + isFetched() + "'" +
             ", created='" + getCreated() + "'" +
             ", engine='" + getEngine() + "'" +
+            ", data='" + getData() + "'" +
+            ", html='" + getHtml() + "'" +
+            ", links='" + getLinks() + "'" +
+            ", level=" + getLevel() +
+            ", fileName='" + getFileName() + "'" +
             "}";
     }
 }
